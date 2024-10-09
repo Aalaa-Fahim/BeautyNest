@@ -64,5 +64,5 @@ To run **BeautyNest** locally, follow these steps:
 
 For questions, feedback, or contributions, feel free to reach out:
 
-- **Aalaa Fahim**: [LinkedIn](https://www.linkedin.com/in/aalaa-fahim)|[GitHub](https://github.com/Aalaa-Fahim)
-- **Reham Saeed**: [LinkedIn](https://www.linkedin.com/in/reham-bahaa)|[GitHub](https://github.com/reham128)
+- **Aalaa Fahim**: [LinkedIn](https://www.linkedin.com/in/aalaa-fahim) | [GitHub](https://github.com/Aalaa-Fahim)
+- **Reham Saeed**: [LinkedIn](https://www.linkedin.com/in/reham-bahaa) | [GitHub](https://github.com/reham128)

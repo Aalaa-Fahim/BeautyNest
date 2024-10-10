@@ -42,7 +42,7 @@ const CTAButton = styled(motion.a)`
   text-decoration: none;
   cursor: pointer;
   &:hover {
-    background-color: #ff4500;
+    background-color: #d3b8b8;
   }
 `;
 

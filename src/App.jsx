@@ -1,5 +1,5 @@
 import React from 'react'
-import Navbar from './Components/Navbar/Navbar'
+import Nav from './Components/Navbar/Nav'
 import Hero from './Components/Hero/Hero'
 import { Routes, Route , BrowserRouter } from 'react-router-dom';
 import StoreCategory from './Pages/StoreCategory';
@@ -13,7 +13,7 @@ const App = () => {
   return (
     <div>
       <BrowserRouter>
-      <Navbar />
+      <Nav />
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/beauty' element={<StoreCategory category="beauty" />} />

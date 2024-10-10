@@ -1,6 +1,5 @@
 import React from 'react'
 import Nav from './Components/Navbar/Nav'
-import Hero from './Components/Hero/Hero'
 import { Routes, Route , BrowserRouter } from 'react-router-dom';
 import StoreCategory from './Pages/StoreCategory';
 import LoginSingup from './Pages/LoginSingup';
@@ -27,7 +26,6 @@ const App = () => {
         <Route path='/login' element={<LoginSingup />} />
 
       </Routes>
-      <Hero />
       </BrowserRouter>
       
     </div>

@@ -46,6 +46,34 @@ const CTAButton = styled(motion.a)`
   }
 `;
 
+const AboutSection = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px;
+  opacity: 0.8;
+  
+  @media (max-width: 768px) {
+    flex-direction: column;
+    text-align: center;
+  }
+`;
+
+const AboutText = styled.div`
+  flex: 1;
+`;
+
+const AboutImage = styled.img`
+  flex: 1;
+  max-width: 400px;
+  margin-left: 20px;
+
+  @media (max-width: 768px) {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+`;
+
 const Hero = () => {
   return (
     <HeroContainer>
@@ -73,6 +101,14 @@ const Hero = () => {
         </CTAButton>
       </HeroContent>
     </HeroContainer>
+
+    <AboutSection>
+      <AboutText>
+        <h2>About BeautyNest</h2>
+        <p>Welcome to BeautyNest, your ultimate destination for all things beauty and self-care! We believe that every individual deserves to feel confident and radiant in their own skin. That’s why BeautyNest is dedicated to curating a luxurious collection of cosmetics and skincare products from trusted brands around the world. Whether you're seeking bold makeup for a night out or natural skincare essentials for daily rejuvenation, our platform is designed to provide an effortless shopping experience. At BeautyNest, we celebrate diversity, creativity, and self-expression, helping you embrace your unique beauty in every way. Explore, indulge, and discover your personal beauty haven with us!</p>
+      </AboutText>
+      <AboutImage src="src/assets/images/logo.jpg" alt="About BeautyNest" />
+    </AboutSection>
   );
 };
 

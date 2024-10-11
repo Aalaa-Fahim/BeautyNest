@@ -76,7 +76,8 @@ const AboutImage = styled.img`
 
 const Hero = () => {
   return (
-    <HeroContainer>
+    <>
+      <HeroContainer>
       <HeroContent
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
@@ -109,6 +110,7 @@ const Hero = () => {
       </AboutText>
       <AboutImage src="src/assets/images/logo.jpg" alt="About BeautyNest" />
     </AboutSection>
+    </>
   );
 };
 

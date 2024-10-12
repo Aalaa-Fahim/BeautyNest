@@ -1,8 +1,12 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import { StoreContext } from '../Context/StoreContext';
 
-const StoreCategory = () => {
+const StoreCategory = (props) => {
+  const {products_info} = useContext(StoreContext);
   return (
-    <div>StoreCategory</div>
+    <div>StoreCategory
+      <img src={props.card} alt='category card' />
+    </div>
   )
 }
 

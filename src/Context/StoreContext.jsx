@@ -1,4 +1,4 @@
-import React, { createContext } from "react";
+/* import React, { createContext } from "react";
 import { all_product} from '../assets/all_product';
 
 export const StoreContext = createContext(null);
@@ -13,3 +13,4 @@ const StoreData = (props)=> {
 
 }
 export default StoreData;
+*/

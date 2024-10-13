@@ -21,7 +21,7 @@ const Nav = () => {
       <div className='py-2 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8'>
         <div className='flex justify-between items-center h-20'>
 
-          {/* Logo */}
+          { Logo }
           <div className='flex items-center'>
             <Link to='/' className='flex items-center'>
               <img src={logo} alt='logo' className='h-8 sm:h-10 w-auto' />
@@ -31,9 +31,9 @@ const Nav = () => {
             </Link>
           </div>
 
-          {/* Mobile Order/Login Buttons and Hamburger Menu */}
+          { Mobile Order/Login Buttons and Hamburger Menu }
           <div className='flex items-center space-x-4 md:hidden'>
-            {/* Order Now Button */}
+            { Order Now Button }
             <Link to='/cart'>
               <button className="bg-gradient-to-r from-primary to-secondary transition-all duration-200 text-white py-1 px-4 rounded-full flex items-center gap-3 group">
                 <span className="group-hover:block hidden transition-all duration-200">
@@ -42,14 +42,14 @@ const Nav = () => {
                 <FaCartShopping className="text-xl text-white" />
               </button>
             </Link>
-            {/* Login Button */}
+            { Login Button }
             <Link to='/login'>
               <button className="bg-gradient-to-r from-primary to-secondary transition-all duration-200 text-white py-1 px-4 rounded-full">
                 Login
               </button>
             </Link>
 
-            {/* Hamburger Menu Button */}
+            { Hamburger Menu Button }
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               className='text-white focus:outline-none'
@@ -58,7 +58,7 @@ const Nav = () => {
             </button>
           </div>
 
-          {/* Links Section (Visible on larger screens) */}
+          { Links Section (Visible on larger screens) }
           <div className='hidden md:flex space-x-6 items-center'>
             <NavLink to='/' className={linkClass}>Home</NavLink>
             <NavLink to='/beauty' className={linkClass}>Beauty</NavLink>
@@ -67,7 +67,7 @@ const Nav = () => {
             <NavLink to='/baby' className={linkClass}>Baby</NavLink>
           </div>
 
-          {/* Buttons Section (Visible on larger screens) */}
+          { Buttons Section (Visible on larger screens) }
           <div className='hidden md:flex items-center space-x-4'>
             <Link to='/cart'>
               <button className="bg-gradient-to-r from-primary to-secondary transition-all duration-200 text-white py-1 px-4 rounded-full flex items-center gap-3 group">
@@ -85,7 +85,7 @@ const Nav = () => {
           </div>
         </div>
 
-        {/* Mobile Links Dropdown (Without Order/Login) */}
+        { Mobile Links Dropdown (Without Order/Login) }
         {isMenuOpen && (
           <div className='md:hidden fixed inset-0 flex flex-col items-center justify-center bg-black bg-opacity-80 space-y-6'>
             <NavLink to='/' className={linkClass} onClick={handleLinkClick}>Home</NavLink>

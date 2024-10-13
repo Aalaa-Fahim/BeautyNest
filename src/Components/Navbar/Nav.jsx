@@ -21,7 +21,7 @@ const Nav = () => {
       <div className='py-1 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8'>
         <div className='flex justify-between items-center h-16'>
 
-          { Logo }
+          {/* Logo */}
           <div className='flex items-center'>
             <Link to='/' className='flex items-center'>
               <img src={logo} alt='logo' className='h-8 sm:h-10 w-auto' />

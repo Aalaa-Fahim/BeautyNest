@@ -4,7 +4,7 @@ import styled from 'styled-components';
 const FooterContainer = styled.footer`
   background-color: #333;
   color: #fff;
-  padding: 10px; /* Decreased height */
+  padding: 6px;
   text-align: center;
 `;
 
@@ -16,7 +16,7 @@ const FooterContent = styled.div`
 `;
 
 const FooterSection = styled.div`
-  margin: 10px;
+  margin: 8px;
 `;
 
 const Footer = () => {
@@ -24,7 +24,7 @@ const Footer = () => {
     <FooterContainer>
       <FooterContent>
         <FooterSection>
-          <p>&copy; 2024 BeautyNest. All rights reserved.</p> {/* Text moved to the left */}
+          <p>&copy; 2024 BeautyNest. All rights reserved.</p>
         </FooterSection>
         <FooterSection>
           <h3>Contact Us</h3>

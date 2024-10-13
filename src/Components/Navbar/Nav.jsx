@@ -24,10 +24,7 @@ const Nav = () => {
           {/* Logo */}
           <div className='flex items-center'>
             <Link to='/' className='flex items-center'>
-              <img src={logo} alt='logo' className='h-10 sm:h-13 w-auto' />
-              /* <span className='hidden md:block text-purple-950 text-xl sm:text-2xl font-bold ml-2'>
-                Beauty<span className='text-pink-600'>Nest</span>
-              </span> */
+              <img src={logo} alt='logo' className='h-16 sm:h-20 w-auto' />
             </Link>
           </div>
 

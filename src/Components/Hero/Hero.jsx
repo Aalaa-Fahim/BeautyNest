@@ -71,7 +71,7 @@ const AboutText = styled.div`
   
   h1 {
     font-weight: bold;
-    font-size: 2.3rem;
+    font-size: 2rem;
     margin-bottom: 20px;
     color: #daa49a;
   }

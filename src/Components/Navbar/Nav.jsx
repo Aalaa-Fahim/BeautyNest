@@ -24,7 +24,12 @@ const Nav = () => {
           {/* Logo */}
           <div className='flex items-center'>
             <Link to='/' className='flex items-center'>
-              <img src={logo} alt='logo' className='h-16 sm:h-20 w-auto' />
+              <span className='hidden md:block text-xl sm:text-2xl font-bold ml-2'>
+                <span style={{ color: '#bc487c' }}>Beauty</span>
+                <span style={{ color: '#695c5c' }}>Nest</span>
+              </span>
+
+              // <img src={logo} alt='logo' className='h-16 sm:h-18 w-auto' />
             </Link>
           </div>
 

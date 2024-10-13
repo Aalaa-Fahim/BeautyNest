@@ -4,19 +4,19 @@ import styled from 'styled-components';
 const FooterContainer = styled.footer`
   background-color: #333;
   color: #fff;
-  padding: 6px;
+  padding: 6px 40px;
   text-align: center;
 `;
 
 const FooterContent = styled.div`
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
 `;
 
 const FooterSection = styled.div`
-  margin: 5px;
+  margin: 0 10px;
 `;
 
 const Footer = () => {

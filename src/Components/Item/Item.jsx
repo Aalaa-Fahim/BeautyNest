@@ -6,7 +6,7 @@ const Item = (props) => {
       <img 
         src={props.image} 
         alt='Item Image' 
-        className='w-full h-48 object-cover mx-auto' 
+        className='w-full h-48 object-cover mx-auto rounded-md'
       />
       <p className='text-left text-base font-bold text-purple-950 mt-2'>{props.name}</p>
       <div className='flex justify-between items-center mt-2'>

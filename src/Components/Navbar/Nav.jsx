@@ -33,7 +33,7 @@ const Nav = () => {
 
           {/* Mobile Order/Login Buttons and Hamburger Menu */}
           <div className='flex items-center space-x-4 md:hidden'>
-            { Order Now Button }
+            {/* Order Now Button */}
             <Link to='/cart'>
               <button className="bg-gradient-to-r from-primary to-secondary transition-all duration-200 text-white py-1 px-4 rounded-full flex items-center gap-3 group">
                 <span className="group-hover:block hidden transition-all duration-200">
@@ -42,7 +42,7 @@ const Nav = () => {
                 <FaCartShopping className="text-xl text-white" />
               </button>
             </Link>
-            { Login Button }
+            {/* Login Button */}
             <Link to='/login'>
               <button className="bg-gradient-to-r from-primary to-secondary transition-all duration-200 text-white py-1 px-4 rounded-full">
                 Login

@@ -5,7 +5,7 @@ import Typewriter from 'typewriter-effect';
 
 // Hero Section Container
 const HeroContainer = styled.div`
-  background-image: url('src/assets/images/background.jpg');
+  background-image: url('src/assets/images/premium_photo.png');
   background-size: cover;
   background-position: center;
   height: 100vh;

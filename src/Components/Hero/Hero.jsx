@@ -70,8 +70,8 @@ const AboutText = styled.div`
   
   h1 {
     font-weight: bold;
-    margin-bottom: 10px;
-    border-bottom: 2px solid #ccc;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
   }
 `;
 

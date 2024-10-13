@@ -16,7 +16,7 @@ const FooterContent = styled.div`
 `;
 
 const FooterSection = styled.div`
-  margin: 8px;
+  margin: 5px;
 `;
 
 const Footer = () => {
@@ -33,8 +33,9 @@ const Footer = () => {
         <FooterSection>
           <h3>Follow Us</h3>
           <p>
-            <a href="#" style={{ color: '#fff', marginRight: '10px' }}>Instagram</a>
-            <a href="#" style={{ color: '#fff' }}>Facebook</a> {/* Placed side by side */}
+            <a href="#" style={{ color: '#fff', marginRight: '10px' }}>Instagram</a> 
+            <span>|</span>
+            <a href="#" style={{ color: '#fff', marginLeft: '10px' }}>Facebook</a>
           </p>
         </FooterSection>
       </FooterContent>

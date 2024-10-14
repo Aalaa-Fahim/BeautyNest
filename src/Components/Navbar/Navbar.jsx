@@ -11,7 +11,7 @@ const Navbar = () => {
       : 'text-white hover:bg-secondary-900 hover:text-white rounded-md px-3 py-2';
 
   return (
-    <div className='shadow-md bg-goldenPink duration-200 relative z-40 border-b border-pink-700'>
+    <div className='shadow-md bg-goldenPink duration-100 relative z-40 border-b border-pink-700'>
       <div className='py-2 mx-auto max-w-7xl px-2 sm:px-6 lg:px-8'>
         <div className='container flex justify-between items-center h-20 '>
           <div className='flex flex-1 items-center justify-center md:items-stretch md:justify-start'>
@@ -29,13 +29,13 @@ const Navbar = () => {
                 <NavLink to='/baby' className={linkClass}>Baby</NavLink>
               </div>
             </div>
-            <Link to='/cart'><button className="bg-gradient-to-r from-primary to-secondary transition-all duration-200 text-white  py-1 px-4 rounded-full flex items-center gap-3 group">
-                <span className="group-hover:block hidden transition-all duration-200">
+            <Link to='/cart'><button className="bg-gradient-to-r from-primary to-secondary transition-all duration-100 text-white  py-1 px-4 rounded-full flex items-center gap-3 group">
+                <span className="group-hover:block hidden transition-all duration-100">
                   Order Now</span>
                 <FaCartShopping className="text-xl text-white drop-shadow-sm cursor-pointer" />
             </button></Link>
             
-            <Link to='/login'><button className="bg-gradient-to-r from-primary to-secondary transition-all duration-200 text-white  py-1 px-4 rounded-full flex items-center gap-3 group">
+            <Link to='/login'><button className="bg-gradient-to-r from-primary to-secondary transition-all duration-100 text-white  py-1 px-4 rounded-full flex items-center gap-3 group">
               login
             </button></Link>
             

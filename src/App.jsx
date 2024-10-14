@@ -1,6 +1,6 @@
 import React from 'react'
 import Nav from './Components/Navbar/Nav'
-import { Routes, Route , BrowserRouter } from 'react-router-dom';
+import { Routes, Route , BrowserRouter, ScrollRestoration } from 'react-router-dom';
 import StoreCategory from './Pages/StoreCategory';
 import LoginSingup from './Pages/LoginSingup';
 import Home from './Pages/Home';
@@ -11,11 +11,13 @@ import beauty_banner from './assets/images/beauty_banner.jpg';
 import facial_banner from './assets/images/facial_banner.jpg';
 import hair_banner from './assets/images/hair_banner.jpg';
 import baby_banner from './assets/images/baby_banner.jpg';
+import ScrollTop from './Components/ScrollTop/ScrollTop'; 
 
 const App = () => {
   return (
     <div>
       <BrowserRouter>
+      <ScrollTop />
       <Nav />
       <Routes>
         <Route path='/' element={<Home />} />

@@ -2,7 +2,7 @@ import React from 'react';
 
 const Item = (props) => {
   return (
-    <div className='bg-[#daa49a] shadow-lg rounded-lg p-4 transition-transform transform hover:scale-105 flex flex-col justify-between min-h-[350px] w-full max-w-[200px] sm:max-w-[220px] md:max-w-[250px] mb-8'>
+    <div className='bg-[#eac2b6] shadow-lg rounded-lg p-4 transition-transform transform hover:scale-105 flex flex-col justify-between min-h-[350px] w-full max-w-[200px] sm:max-w-[220px] md:max-w-[250px] mb-8'>
       {/* Product Image Section */}
       <div className='flex justify-center items-center overflow-hidden rounded-md mb-4'>
         <img 

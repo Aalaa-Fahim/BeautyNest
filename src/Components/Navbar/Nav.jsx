@@ -17,7 +17,7 @@ const Nav = () => {
   };
 
   return (
-    <div className='shadow-md bg-goldenPink duration-100 fixed top-0 w-full z-40 border-b border-pink-700'>
+    <div className='shadow-md bg-goldenPink duration-300 fixed top-0 w-full z-40 border-b border-pink-700'>
       <div className='py-1 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8'>
         <div className='flex justify-between items-center h-16'>
 
@@ -32,8 +32,8 @@ const Nav = () => {
           <div className='flex items-center space-x-4 md:hidden'>
             {/* Order Now Button */}
             <Link to='/cart'>
-              <button className="bg-gradient-to-r from-primary to-secondary transition-all duration-100 text-white py-1 px-4 rounded-full flex items-center gap-3 group">
-                <span className="group-hover:block hidden transition-all duration-100">
+              <button className="bg-gradient-to-r from-primary to-secondary transition-all duration-300 text-white py-1 px-4 rounded-full flex items-center gap-3 group">
+                <span className="group-hover:block hidden transition-all duration-300">
                   Order Now
                 </span>
                 <FaCartShopping className="text-xl text-white" />
@@ -41,7 +41,7 @@ const Nav = () => {
             </Link>
             {/* Login Button */}
             <Link to='/login'>
-              <button className="bg-gradient-to-r from-primary to-secondary transition-all duration-100 text-white py-1 px-4 rounded-full">
+              <button className="bg-gradient-to-r from-primary to-secondary transition-all duration-300 text-white py-1 px-4 rounded-full">
                 Login
               </button>
             </Link>
@@ -67,15 +67,15 @@ const Nav = () => {
           {/* Buttons Section (Visible on larger screens) */}
           <div className='hidden md:flex items-center space-x-4'>
             <Link to='/cart'>
-              <button className="bg-gradient-to-r from-primary to-secondary transition-all duration-100 text-white py-1 px-4 rounded-full flex items-center gap-3 group">
-                <span className="group-hover:block hidden transition-all duration-100">
+              <button className="bg-gradient-to-r from-primary to-secondary transition-all duration-300 text-white py-1 px-4 rounded-full flex items-center gap-3 group">
+                <span className="group-hover:block hidden transition-all duration-300">
                   Order Now
                 </span>
                 <FaCartShopping className="text-xl text-white" />
               </button>
             </Link>
             <Link to='/login'>
-              <button className="bg-gradient-to-r from-primary to-secondary transition-all duration-100 text-white py-1 px-4 rounded-full">
+              <button className="bg-gradient-to-r from-primary to-secondary transition-all duration-300 text-white py-1 px-4 rounded-full">
                 Login
               </button>
             </Link>

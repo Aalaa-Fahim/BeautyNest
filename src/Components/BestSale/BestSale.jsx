@@ -4,11 +4,10 @@ import Item from '../Item/Item';
 
 const BestSale = () => {
   return (
-    <div className='container mx-auto px-4 py-8' style={{ paddingLeft: '50px' }}>
-      <h1 className='text-3xl font-bold text-left mb-4' style={{ color: '#daa49a' }}>
+    <div className='container mx-auto px-8 py-8'>
+      <h1 className='text-4xl font-bold text-left mb-6' style={{ color: '#daa49a' }}>
         Best Sale Products
       </h1>
-      <hr className='mb-4' />
       <div className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-2'>
         {data_product.map((item, index) => (
           <Item 

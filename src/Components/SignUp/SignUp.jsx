@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { auth } from "../../firebase.config";
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import { Link } from 'react-router-dom';
+import { toast } from 'react-toastify';
 
 const SignUp = () => {
   const [email, setEmail] = useState("");
@@ -10,14 +11,23 @@ const SignUp = () => {
 
   const signUp = async () => {
     if (password !== confirmPassword) {
-      console.error("Passwords do not match");
+      toast.error("Passwords do not match");
       return;
 
   }
   try {
     await createUserWithEmailAndPassword(auth, email, password);
-    console.log("User signed up successfully");
+    toast.success("User signed up successfully!");
   } catch (error) {
+    if (error.code === 'auth/email-already-in-use') {
+      toast.error("Email is already in use. Please try another.");
+    } else if (error.code === 'auth/invalid-email') {
+      toast.error("Invalid email format.");
+    } else if (error.code === 'auth/weak-password') {
+      toast.error("Password should be at least 6 characters.");
+    } else {
+      toast.error("Error signing up. Please try again.");
+    }
     console.error("Error signing up:", error);
   }
 };

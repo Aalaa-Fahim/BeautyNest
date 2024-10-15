@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { auth } from "../../firebase.config";
+import { auth, googleProvider } from "../../firebase.config";
 import { signInWithEmailAndPassword, signInWithPopup, GoogleAuthProvider } from "firebase/auth";
 import { Link } from 'react-router-dom';
 import { FaGoogle } from 'react-icons/fa';
@@ -8,10 +8,7 @@ const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [isEmailLogin, setIsEmailLogin] = useState(false);
-  const provider = new GoogleAuthProvider();
-
   
-
   const LogIn = async () => {
     try {
       await signInWithEmailAndPassword(auth, email, password);

@@ -15,6 +15,7 @@ import ScrollTop from './Components/ScrollTop/ScrollTop';
 import SignUp from './Components/SignUp/SignUp';
 import Login from './Components/Login/Login';
 import Log from './Components/Login/Log';
+import 'react-toastify/dist/ReactToastify.css'; 
 
 
 const App = () => {

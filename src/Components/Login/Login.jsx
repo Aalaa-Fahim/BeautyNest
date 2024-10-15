@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom';
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [isEmailLogin, setIsEmailLogin] = useState(false);
   const provider = new GoogleAuthProvider();
 
   
@@ -30,26 +31,51 @@ const Login = () => {
 
   return (
     <div className="flex items-center justify-center h-screen bg-gray-100">
-      <div>
-        <button onClick={loginWithGoogle}>Login with Google</button>
-      </div>
       <div className="bg-white p-8 rounded-lg shadow-lg w-96">
         <h1 className="text-2xl text-[#695c5c] font-bold mb-6 text-center">Login</h1>
-        <input className="w-full px-4 py-2 mb-4 border rounded-lg focus:outline-none focus:ring-2 focus:ring-[#695c5c]"
-        placeholder='Enter Your Email' onChange={(e) => setEmail(e.target.value)} />
-        <input className="w-full px-4 py-2 mb-4 border rounded-lg focus:outline-none focus:ring-2 focus:ring-[#695c5c]"
-        type="password" 
-        placeholder='Passowrd' onChange={(e) => setPassword(e.target.value)}/>
-        <button className="w-full bg-[#695c5c] text-white py-2 rounded-lg hover:bg-goldenPink transition duration-200" onClick={LogIn}>Login</button>
+        <div className="mb-4">
+          <button 
+            className="w-full bg-[#695c5c] text-white py-2 rounded-lg hover:bg-goldenPink transition duration-200 mb-2"
+            onClick={loginWithGoogle}>
+            Login with Google
+          </button>
+          <button 
+            className="w-full text-[#695c5c] py-2 rounded-lg border border-[#695c5c] hover:bg-[#695c5c] hover:text-white transition duration-200"
+            onClick={() => setIsEmailLogin(true)}>
+            Login with Email/Password
+          </button>
+        </div>
+
+        {isEmailLogin && (
+          <>
+            <input 
+              className="w-full px-4 py-2 mb-4 border rounded-lg focus:outline-none focus:ring-2 focus:ring-[#695c5c]"
+              placeholder='Enter Your Email' 
+              onChange={(e) => setEmail(e.target.value)} 
+            />
+            <input 
+              className="w-full px-4 py-2 mb-4 border rounded-lg focus:outline-none focus:ring-2 focus:ring-[#695c5c]"
+              type="password" 
+              placeholder='Password' 
+              onChange={(e) => setPassword(e.target.value)} 
+            />
+            <button 
+              className="w-full bg-[#695c5c] text-white py-2 rounded-lg hover:bg-goldenPink transition duration-200" 
+              onClick={LogIn}>
+              Login
+            </button>
+          </>
+        )}
+
         <p className="mt-4 text-center text-gray-600">
-        Need an account? 
-        <Link to='/signup' className="text-[#695c5c] font-semibold hover:underline">
-          Sign Up.
-        </Link>
-      </p>
+          Need an account? 
+          <Link to='/signup' className="text-[#695c5c] font-semibold hover:underline">
+            Sign Up.
+          </Link>
+        </p>
       </div>
     </div>
-  )
+  );
 }
 
 export default Login;

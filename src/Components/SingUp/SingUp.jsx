@@ -1,11 +1,12 @@
 import React, { useState } from 'react'
 
+
 const SingUp = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
   const singIn = () => {
-    
+
   }
   return (
     <div>

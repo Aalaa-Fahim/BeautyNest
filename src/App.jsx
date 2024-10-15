@@ -14,6 +14,7 @@ import baby_banner from './assets/images/baby_banner.jpg';
 import ScrollTop from './Components/ScrollTop/ScrollTop'; 
 import SignUp from './Components/SignUp/SignUp';
 import Login from './Components/Login/Login';
+import Log from './Components/Login/Log';
 
 
 const App = () => {
@@ -33,6 +34,7 @@ const App = () => {
         </Route>
         <Route path='/cart' element={<Cart />} />
         <Route path='/login' element={<Login />} />
+        <Route path='/log' element={<Log />} />
         <Route path='/signup' element={<SignUp />} />
       </Routes>
       <Footer />

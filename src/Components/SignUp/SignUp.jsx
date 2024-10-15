@@ -10,7 +10,7 @@ const SignUp = () => {
   }
   return (
     <div>
-      <h1>Sign Up</h1>
+      <h1>Login</h1>
       <input placeholder='Enter Your Email' onChange={(e) => setEmail(e.target.value)} />
       <input placeholder='Passowrd' onChange={(e) => setPassword(e.target.value)}/>
       <button onClick={signUp}>Sign Up</button>

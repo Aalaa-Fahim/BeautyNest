@@ -6,7 +6,7 @@ const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
-  const SignIn = async () => {
+  const LogIn = async () => {
     try {
       await signInWithEmailAndPassword(auth, email, password);
       console.log("User signed in successfully");
@@ -21,7 +21,7 @@ const Login = () => {
       <h1>SingUp</h1>
       <input placeholder='Enter Your Email' onChange={(e) => setEmail(e.target.value)} />
       <input placeholder='Passowrd' onChange={(e) => setPassword(e.target.value)}/>
-      <button onClick={SignIn}>Sign In</button>
+      <button onClick={LogIn}>Sign In</button>
     </div>
   )
 }

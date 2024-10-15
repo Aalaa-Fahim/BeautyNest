@@ -12,7 +12,7 @@ import facial_banner from './assets/images/facial_banner.jpg';
 import hair_banner from './assets/images/hair_banner.jpg';
 import baby_banner from './assets/images/baby_banner.jpg';
 import ScrollTop from './Components/ScrollTop/ScrollTop'; 
-import SingUp from './Components/SignUp/SingUp';
+import SignUp from './Components/SignUp/SignUp';
 import Login from './Components/Login/Login';
 
 
@@ -33,8 +33,7 @@ const App = () => {
         </Route>
         <Route path='/cart' element={<Cart />} />
         <Route path='/login' element={<Login />} />
-        <Route path='/singup' element={<SingUp />} />
-
+        <Route path='/signup' element={<SignUp />} />
       </Routes>
       <Footer />
       </BrowserRouter>

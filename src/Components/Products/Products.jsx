@@ -14,19 +14,18 @@ const Categories = () => {
 
   // useEffect to initialize AOS animations on component mount
   useEffect(() => {
-    AOS.init({ duration: 2000, easing: 'ease-out-cubic' });
-    AOS.refresh();
+    AOS.init({ duration: 1200, delay: 0, once: false });
   }, []);
 
   return (
-    <div className='container mx-auto px-8 py-8'>
+    <div className='container mx-auto p-8' data-aos="fade-downcl">
       {/* Heading of the Categories section */}
-      <h1 className='text-4xl font-bold text-left mb-6 sticky top-0 bg-white z-10' style={{ color: '#daa49a' }}>
+      <h1 className='text-4xl font-bold text-left mb-6 bg-white' style={{ color: '#daa49a' }}>
         Categories
       </h1>
       
       {/* Grid layout for categories */}
-      <div className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4' data-aos="flip-right">
+      <div className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-2'>
         {categories.map((category, index) => (
           <div key={index} className='bg-[#f3d6cf] shadow-lg rounded-lg p-4 transition-transform transform hover:scale-105 flex flex-col justify-center items-center max-w-[210px]'>
             {/* Display the category image */}

@@ -1,14 +1,28 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import 'aos/dist/aos.css';
+import AOS from 'aos';
 
 const Item = (props) => {
+  useEffect(() => {
+    AOS.init({ 
+      duration: 1000,
+      offset: 300,
+      easing: 'ease-in-sine',
+    });
+    AOS.refresh();
+  }, []);
+
   return (
-    <div className='bg-[#f3d6cf] shadow-lg rounded-lg p-4 transition-transform transform hover:scale-105 flex flex-col justify-between min-h-[350px] w-full max-w-[200px] sm:max-w-[220px] md:max-w-[250px] mb-8'>
+    <div 
+      className='bg-[#f3d6cf] shadow-lg rounded-lg p-4 transition-transform transform hover:scale-105 flex flex-col justify-between min-h-[350px] w-full max-w-[200px] sm:max-w-[220px] md:max-w-[250px] mb-8'
+      data-aos="fade-right"
+    >
       {/* Product Image Section */}
-      <div className='flex justify-center items-center overflow-hidden rounded-md mb-4'>
+      <div className='flex justify-center items-center overflow-hidden rounded-lg mb-4'>
         <img 
           src={props.image} 
           alt='Item Image' 
-          className='w-36 h-36 object-cover'
+          className='w-36 h-36 object-cover rounded-lg' 
         />
       </div>
 

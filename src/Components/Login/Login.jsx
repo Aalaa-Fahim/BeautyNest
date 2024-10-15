@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
 import { auth } from "../../firebase.config";
-import { signInWithEmailAndPassword } from "firebase/auth";
+import { signInWithEmailAndPassword, signInWithPopup, GoogleAuthProvider } from "firebase/auth";
 import { Link } from 'react-router-dom';
 
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const provider = new GoogleAuthProvider();
 
   
 
@@ -18,8 +19,20 @@ const Login = () => {
     }
   };
 
+  const loginWithGoogle = async () => {
+    try {
+      await signInWithPopup(auth, provider);
+      console.log("User signed in successfully");
+    } catch (error) {
+      console.error("Error signing in with Google:", error);
+    }
+  };
+
   return (
     <div className="flex items-center justify-center h-screen bg-gray-100">
+      <div>
+        <button onClick={loginWithGoogle}>Login with Google</button>
+      </div>
       <div className="bg-white p-8 rounded-lg shadow-lg w-96">
         <h1 className="text-2xl text-[#695c5c] font-bold mb-6 text-center">Login</h1>
         <input className="w-full px-4 py-2 mb-4 border rounded-lg focus:outline-none focus:ring-2 focus:ring-[#695c5c]"

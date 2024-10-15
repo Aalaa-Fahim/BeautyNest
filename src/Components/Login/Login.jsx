@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { auth } from "../../firebase.config";
 import { signInWithEmailAndPassword, signInWithPopup, GoogleAuthProvider } from "firebase/auth";
 import { Link } from 'react-router-dom';
+import { FaGoogle } from 'react-icons/fa';
 
 const Login = () => {
   const [email, setEmail] = useState("");
@@ -35,9 +36,11 @@ const Login = () => {
         <h1 className="text-2xl text-[#695c5c] font-bold mb-6 text-center">Login</h1>
         <div className="mb-4">
           <button 
-            className="w-full bg-[#695c5c] text-white py-2 rounded-lg hover:bg-goldenPink transition duration-200 mb-2"
-            onClick={loginWithGoogle}>
-            Login with Google
+            className="w-full bg-[#695c5c] text-white py-2 rounded-lg hover:bg-[#695c5c] transition duration-200 mb-2"
+            onClick={loginWithGoogle}
+            onMouseDown={e => e.preventDefault()}>
+            <FaGoogle className="h-5 w-5 mr-2" />
+            <span className="flex-grow text-left">Login with Google</span>
           </button>
           <button 
             className="w-full text-[#695c5c] py-2 rounded-lg border border-[#695c5c] hover:bg-[#695c5c] hover:text-white transition duration-200"

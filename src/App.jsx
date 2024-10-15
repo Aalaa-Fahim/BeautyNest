@@ -35,7 +35,7 @@ const App = () => {
         <Route path='/singup' element={<SingUp />} />
 
       </Routes>
-      
+      <Footer />
       </BrowserRouter>
       
     </div>

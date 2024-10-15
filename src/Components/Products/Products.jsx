@@ -28,7 +28,7 @@ const Categories = () => {
       {/* Grid layout for categories */}
       <div className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4' data-aos="flip-right">
         {categories.map((category, index) => (
-          <div key={index} className='bg-[#f3d6cf] shadow-lg rounded-lg p-4 transition-transform transform hover:scale-105 flex flex-col justify-center items-center max-w-[200px]'>
+          <div key={index} className='bg-[#f3d6cf] shadow-lg rounded-lg p-4 transition-transform transform hover:scale-105 flex flex-col justify-center items-center max-w-[210px]'>
             {/* Display the category image */}
             <img
               src={category.image} 

@@ -56,7 +56,7 @@ const AboutSection = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 50px;
+  padding: 70px;
   color: #695c5c;
 
   @media (max-width: 768px) {

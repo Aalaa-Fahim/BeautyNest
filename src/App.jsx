@@ -12,8 +12,9 @@ import facial_banner from './assets/images/facial_banner.jpg';
 import hair_banner from './assets/images/hair_banner.jpg';
 import baby_banner from './assets/images/baby_banner.jpg';
 import ScrollTop from './Components/ScrollTop/ScrollTop'; 
-import SingUp from './Components/SingUp/SingUp';
+import SingUp from './Components/SignUp/SingUp';
 import Login from './Components/Login/Login';
+
 
 const App = () => {
   return (
@@ -42,4 +43,4 @@ const App = () => {
   )
 }
 
-export default App
+export default App;

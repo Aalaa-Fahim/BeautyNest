@@ -1,27 +1,21 @@
 import React, { useState } from 'react';
 import { auth } from "../../firebase.config";
 import { signInWithEmailAndPassword } from "firebase/auth";
+import { Link } from 'react-router-dom';
 
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [errorMessage, setErrorMessage] = useState(null);
 
   
 
   const LogIn = async () => {
     try {
-      if (!email || !password) {
-        setErrorMessage("Email and Password are required");
-        return;
-      }
       await signInWithEmailAndPassword(auth, email, password);
       console.log("User signed in successfully");
     } catch (error) {
       console.error("Error signing in:", error);
-      setErrorMessage(error.message);
     }
-    
   };
 
   return (
@@ -34,6 +28,12 @@ const Login = () => {
         type="password" 
         placeholder='Passowrd' onChange={(e) => setPassword(e.target.value)}/>
         <button className="w-full bg-[#695c5c] text-white py-2 rounded-lg hover:bg-goldenPink transition duration-200" onClick={LogIn}>Login</button>
+        <p className="mt-4 text-center text-gray-600">
+        Need an account? 
+        <Link to='/signup' className="text-[#695c5c] font-semibold hover:underline">
+          Sign Up.
+        </Link>
+      </p>
       </div>
     </div>
   )

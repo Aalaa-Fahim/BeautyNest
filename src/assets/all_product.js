@@ -57,6 +57,7 @@ let all_data_product = [
     image: pro_1,
     new_price: 50.0,
     old_price: 80.5,
+    description: "This organic face foundation provides flawless coverage with a natural finish. Made with organic ingredients, it's gentle on the skin, ensuring a radiant look all day long.",
   },
   {
     id: 2,
@@ -65,6 +66,7 @@ let all_data_product = [
     image: pro_2,
     new_price: 90.0,
     old_price: 120.5,
+    description: "Infused with cherry oil, this lip glow oil nourishes and revives the natural color of your lips. Perfect for adding a glossy, hydrated look to your makeup routine.",
   },
   {
     id: 3,
@@ -73,6 +75,7 @@ let all_data_product = [
     image: pro_3,
     new_price: 60.0,
     old_price: 100.5,
+    description: "Achieve a smooth and even complexion with BOBBL Brown's long-wear face foundation. With SPF 15 protection, it's ideal for all-day wear and perfect for any fashion look.",
   },
   {
     id: 4,
@@ -81,6 +84,7 @@ let all_data_product = [
     image: pro_4,
     new_price: 100.0,
     old_price: 150.0,
+    description: "This multi-use concealer from Maybelline is a game-changer! Instantly erases dark circles, blemishes, and fine lines without clogging pores. Suitable for sensitive skin.",
   },
   {
     id: 5,
@@ -89,6 +93,7 @@ let all_data_product = [
     image: pro_5,
     new_price: 99.0,
     old_price: 122.5,
+    description: "Get the perfect lash lift with RubyRose's waterproof mascara. Designed to give your lashes volume and length while withstanding humidity and water.",
   },
   {
     id: 6,
@@ -97,6 +102,7 @@ let all_data_product = [
     image: pro_6,
     new_price: 88.0,
     old_price: 105.5,
+    description: "A cult favorite! This rose-tinted stain from Benefit is perfect for adding a natural flush to your lips and cheeks, lasting all day for a fresh look.",
   },
   {
     id: 7,
@@ -105,6 +111,7 @@ let all_data_product = [
     image: pro_7,
     new_price: 43.0,
     old_price: 55.5,
+    description: "Deep clean your pores with the CARVAO Detox peel-off mask. This black mask is designed to remove impurities, leaving your skin smooth and rejuvenated.",
   },
   {
     id: 8,
@@ -113,6 +120,7 @@ let all_data_product = [
     image: pro_8,
     new_price: 97.0,
     old_price: 135.5,
+    description: "Revitalize tired eyes with L'Oreal's Revitallift filler serum. Formulated with hyaluronic acid and caffeine, this serum reduces puffiness and hydrates the delicate under-eye area.",
   },
   {
     id: 9,
@@ -121,6 +129,7 @@ let all_data_product = [
     image: pro_9,
     new_price: 32.5,
     old_price: 45.5,
+    description: "Add a pop of color to your cheeks with SEHGLAM's Color Bloom liquid blush. Lightweight and easy to blend, it's perfect for achieving a natural, glowing look.",
   },
   {
     id: 10,
@@ -129,6 +138,7 @@ let all_data_product = [
     image: pro_10,
     new_price: 83.0,
     old_price: 117.0,
+    description: "NARS brings you a long-lasting foundation with SPF 15. This lightweight formula offers full coverage while protecting your skin from sun damage.",
   },
   {
     id: 11,

@@ -5,7 +5,7 @@ import { IoStarHalf } from "react-icons/io5";
 const ProductDetails = (props) => {
   const {product} = props;
   return (
-    <div>
+    <div className='max-w-screen-xl mx-auto flex gap-10 pt-6'>
       <div className='max-w-screen-xl mx-auto flex gap-10'>
         <div className='w-2/5 relative'><img className='w-full h-[550px] object-cover' src={product.image} alt='product image' />
         </div>
@@ -39,7 +39,7 @@ const ProductDetails = (props) => {
             </div>
             <button className='bg-[#695c5c] text-white font-semibold py-3 px-6 rounded-lg  transition-colors hover:bg-[#cbb1b1] mt-auto'>add to cart</button>
           </div>
-          <p>Category: <span>{product.category}</span></p>
+          <p>Category: <span className='font-medium capitalize'>{product.category}</span></p>
         </div>
       </div>
       

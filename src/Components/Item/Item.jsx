@@ -45,14 +45,11 @@ const Item = (props) => {
 
       {/* Add to Cart Button */}
       <div className='mt-4'>
-        <Link to='/cart'>
-          <button 
-            className='bg-[#695c5c] text-white font-semibold py-2 px-4 rounded-lg w-full transition-colors hover:bg-[#cbb1b1] mt-auto'
-          >
-            Add To Cart
-          </button>
-        </Link>
-        
+        <button 
+          className='bg-[#695c5c] text-white font-semibold py-2 px-4 rounded-lg w-full transition-colors hover:bg-[#cbb1b1] mt-auto'
+        >
+          Add To Cart
+        </button> 
       </div>
     </div>
   );

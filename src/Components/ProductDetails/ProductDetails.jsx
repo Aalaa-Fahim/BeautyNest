@@ -11,21 +11,23 @@ const ProductDetails = (props) => {
         </div>
         <div className='w-3/5 flex flex-col justify-center gap-12'>
           <div>
-            <h1 className='text-4xl font-semibold'>{product.name}</h1>
+            <h2 className='text-4xl font-semibold'>{product.name}</h2>
             <div className='flex items-center gap-12 mt-3'>
               <p className='text-goldenPink font-semibold text-2xl'>${product.new_price}</p>
               <p className='text-gray-500 line-through text-xs'>${product.old_price}</p>
             </div>
           </div>
           <div className='flex items-center gap-2 text-base'>
-            <div>
-            <IoStar />
-            <IoStar />
-            <IoStar />
-            <IoStar />
-            <IoStarHalf />
+            <div className='flex'>
+              <IoStar />
+              <IoStar />
+              <IoStar />
+              <IoStar />
+              <IoStarHalf />
             </div>
+            <p className='text-xs text-gray-400'>(132 Customer review)</p>
           </div>
+          <p className='text-base text-gray-600 -mt-3'>{product.description}</p>
         </div>
       </div>
       

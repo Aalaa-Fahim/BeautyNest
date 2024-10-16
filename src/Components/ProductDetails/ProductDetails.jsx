@@ -7,9 +7,9 @@ const ProductDetails = (props) => {
   return (
     <div className='max-w-screen-xl mx-auto flex flex-col lg:flex-row gap-10 py-10 px-4 lg:px-0'>
       <div className='max-w-screen-xl mx-auto flex gap-10'>
-        <div className='w-full lg:w-1/3 relative'><img className='w-full h-[400px] lg:h-[450px] object-cover rounded-xl shadow-lg hover:scale-105 transition-transform duration-300 ease-in-out' src={product.image} alt='product image' />
+        <div className='w-full lg:w-2/5 relative'><img className='w-full h-[400px] lg:h-[450px] object-cover rounded-xl shadow-lg hover:scale-105 transition-transform duration-300 ease-in-out' src={product.image} alt='product image' />
         </div>
-        <div className='w-full lg:w-2/3 flex flex-col justify-center gap-12'>
+        <div className='w-full lg:w-3/5 flex flex-col justify-center gap-12'>
           <div>
             <h2 className='text-3xl lg:text-4xl font-semibold'>{product.name}</h2>
             <div className='flex items-center gap-4 lg:gap-12 mt-3'>

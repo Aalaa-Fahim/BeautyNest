@@ -246,6 +246,7 @@ let all_data_product = [
     image: pro_22,
     new_price: 70.0,
     old_price: 72.5,
+    description: "A gentle cleanser that hydrates and helps restore the protective skin barrier, perfect for normal to dry skin.",
   },
   {
     id: 23,
@@ -254,6 +255,7 @@ let all_data_product = [
     image: pro_23,
     new_price: 59.0,
     old_price: 107.5,
+     description: "A silicone facial brush that gently exfoliates and enhances your skincare routine with a soothing massage.",
   },
   {
     id: 24,
@@ -262,6 +264,7 @@ let all_data_product = [
     image: pro_24,
     new_price: 129.5,
     old_price: 145.5,
+    description: "A luxurious full set that includes premium face care products for a radiant and youthful glow.",
   },
   {
     id: 25,
@@ -270,6 +273,7 @@ let all_data_product = [
     image: pro_25,
     new_price: 78.0,
     old_price: 83.5,
+    description: "A purple toning treatment that neutralizes unwanted brassiness in blonde and silver hair.",
   },
   {
     id: 26,
@@ -278,6 +282,7 @@ let all_data_product = [
     image: pro_26,
     new_price: 22.0,
     old_price: 29.5,
+    description: "A nourishing body scrub with rose oil that exfoliates and hydrates, leaving your skin soft and smooth.",
   },
   {
     id: 27,
@@ -286,6 +291,7 @@ let all_data_product = [
     image: pro_27,
     new_price: 99.0,
     old_price: 109.5,
+    description: "A powerful essence enriched with snail mucin that promotes skin repair, hydration, and elasticity.",
   },
   {
     id: 28,
@@ -294,6 +300,7 @@ let all_data_product = [
     image: pro_28,
     new_price: 85.0,
     old_price: 120.5,
+     description: "A renewing cleanser that exfoliates and removes dirt while helping to restore the skin barrier.",
   },
   {
     id: 29,
@@ -302,6 +309,7 @@ let all_data_product = [
     image: pro_29,
     new_price: 81.0,
     old_price: 87.5,
+    description: "A brightening vitamin C serum that reduces the appearance of fine lines and promotes a radiant complexion.",
   },
   {
     id: 30,
@@ -310,6 +318,7 @@ let all_data_product = [
     image: pro_30,
     new_price: 109.0,
     old_price: 115.5,
+    description: "An exfoliating toning solution that improves skin texture and radiance while minimizing pores.",
   },
   {
     id: 31,
@@ -318,6 +327,7 @@ let all_data_product = [
     image: pro_31,
     new_price: 79.0,
     old_price: 97.5,
+    description: "A clarifying toner that helps control oil and prevent breakouts while maintaining moisture.",
   },
   {
     id: 32,
@@ -326,6 +336,7 @@ let all_data_product = [
     image: pro_32,
     new_price: 48.0,
     old_price: 53.5,
+     description: "A brightening serum that targets dark spots and uneven skin tone for a more luminous complexion.",
   },
   {
     id: 33,

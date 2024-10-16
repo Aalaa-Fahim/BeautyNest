@@ -1,5 +1,4 @@
 import React, { createContext } from "react";
-//import { pro } from "../assets/all_product";
 import all_data_product from '../assets/all_product';
 
 export const StoreContext = createContext(null);

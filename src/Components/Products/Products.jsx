@@ -29,11 +29,13 @@ const Categories = () => {
         {categories.map((category, index) => (
           <div key={index} className='bg-[#f3d6cf] shadow-lg rounded-lg p-4 transition-transform transform hover:scale-105 flex flex-col justify-center items-center max-w-[210px]'>
             {/* Display the category image */}
-            <img
-              src={category.image} 
-              alt={category.name}
-              className='rounded-full w-24 h-24 mb-4'
-            />
+            <Link to={category.link}>
+              <img
+                src={category.image} 
+                alt={category.name}
+                className='rounded-full w-24 h-24 mb-4'
+              />
+            </Link>
             {/* Link to the category page */}
             <Link to={category.link} className='text-center text-2xl font-bold text-[#695c5c]'>
               {category.name}

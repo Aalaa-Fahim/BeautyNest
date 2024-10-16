@@ -147,6 +147,7 @@ let all_data_product = [
     image: pro_11,
     new_price: 13.0,
     old_price: 25.5,
+    description: "Achieve flawless makeup application with this four-colored soft beauty blender. Perfect for blending foundation, concealer, and more for an airbrushed finish.",
   },
   {
     id: 12,
@@ -155,6 +156,7 @@ let all_data_product = [
     image: pro_12,
     new_price: 81.0,
     old_price: 96.5,
+    description: "DIOR's waterproof mascara offers dramatic volume and a lash-lifting effect, perfect for all-day wear, even in wet conditions.",
   },
   {
     id: 13,
@@ -163,6 +165,7 @@ let all_data_product = [
     image: pro_13,
     new_price: 75.0,
     old_price: 125.0,
+    description: "Get super coverage with BORB's multi-use sculpting concealer. Ideal for contouring and concealing, it provides a flawless, long-lasting finish.",
   },
   {
     id: 14,
@@ -171,6 +174,7 @@ let all_data_product = [
     image: pro_14,
     new_price: 47.0,
     old_price: 52.0,
+    description: "Wake up to soft, hydrated lips with LANEIGE's lip sleeping mask. Infused with berry extracts, this overnight treatment nourishes and repairs lips as you sleep.",
   },
   {
     id: 15,
@@ -179,6 +183,7 @@ let all_data_product = [
     image: pro_15,
     new_price: 55.0,
     old_price: 65.0,
+    description: "This versatile brush set is perfect for all your beauty needs. With a variety of brushes for face and eyes, it comes in a stylish violet container for easy storage.",
   },
   {
     id: 16,
@@ -187,6 +192,7 @@ let all_data_product = [
     image: pro_16,
     new_price: 59.0,
     old_price: 78.5,
+    description: "These ultra-soft, fancy-colored brushes are perfect for applying makeup with precision and ease. Ideal for both beginners and professionals.",
   },
   {
     id: 17,
@@ -195,6 +201,7 @@ let all_data_product = [
     image: pro_17,
     new_price: 39.0,
     old_price: 49.0,
+    description: "Hydrate and repair your skin with COSRX's advanced snail 92 all-in-one cream. Formulated with snail mucin, it provides intense moisture and improves skin texture.",
   },
   {
     id: 18,
@@ -203,6 +210,7 @@ let all_data_product = [
     image: pro_18,
     new_price: 59.0,
     old_price: 64.5,
+    description: "This hydrating face serum by MIDO, enriched with hyaluronic acid, locks in moisture and enhances skin elasticity. Trusted by experts from Beverly Hills.",
   },
   {
     id: 19,
@@ -211,6 +219,7 @@ let all_data_product = [
     image: pro_19,
     new_price: 69.5,
     old_price: 75.0,
+    description: "Open up your pores and rejuvenate your skin with this electric face steamer. Perfect for deep cleansing and relaxing facial treatments at home.",
   },
   {
     id: 20,
@@ -219,6 +228,7 @@ let all_data_product = [
     image: pro_20,
     new_price: 85.0,
     old_price: 120.5,
+    description: "Brighten and revitalize your skin with RODIAL's Vitamin C mask. This powerful mask targets dark spots and uneven skin tone, leaving your complexion radiant and refreshed.",
   },
   {
     id: 21,

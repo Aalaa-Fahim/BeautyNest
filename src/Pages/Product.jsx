@@ -3,6 +3,7 @@ import { StoreContext } from '../Context/StoreContext';
 import { use } from 'framer-motion/client';
 import { useParams } from 'react-router-dom';
 import ProductNav from '../Components/ProductNav/ProductNav';
+import ProductDetails from '../Components/ProductDetails/ProductDetails';
 
 const Product = () => {
   const {all_data_product} = useContext(StoreContext);
@@ -11,9 +12,8 @@ const Product = () => {
   return (
     <div>
       <ProductNav product={product}/>
-      <ProductNav product={product}/>
-      <ProductNav product={product}/>
-      <ProductNav product={product}/>
+      <ProductDetails product={product}/>
+
     </div>
   )
 }

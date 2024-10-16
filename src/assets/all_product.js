@@ -345,6 +345,7 @@ let all_data_product = [
     image: pro_33,
     new_price: 89.0,
     old_price: 125.5,
+    description: "A lightweight moisturizer with rose extract that hydrates and leaves your skin feeling refreshed.",
   },
   {
     id: 34,
@@ -353,6 +354,7 @@ let all_data_product = [
     image: pro_34,
     new_price: 43.0,
     old_price: 58.5,
+     description: "A complete hair care collection that nourishes, strengthens, and revitalizes your hair.",
   },
   {
     id: 35,
@@ -361,6 +363,7 @@ let all_data_product = [
     image: pro_35,
     new_price: 40.0,
     old_price: 42.5,
+    description: "A scalp and hair oil infused with rosemary and mint that promotes hair growth and healthy scalp.",
   },
   {
     id: 36,
@@ -369,6 +372,7 @@ let all_data_product = [
     image: pro_36,
     new_price: 27.0,
     old_price: 33.0,
+    description: "A natural wooden comb set designed to detangle and style hair without causing damage.",
   },
   {
     id: 37,
@@ -377,6 +381,7 @@ let all_data_product = [
     image: pro_37,
     new_price: 22.0,
     old_price: 37.0,
+    description: "A nourishing shampoo and conditioner duo that helps achieve long, healthy-looking hair.",
   },
   {
     id: 41,
@@ -385,6 +390,7 @@ let all_data_product = [
     image: pro_41,
     new_price: 199.0,
     old_price: 259.5,
+    description: "An innovative electric brush that effortlessly styles and smoothens hair for a polished look.",
   },
   {
     id: 43,
@@ -393,6 +399,7 @@ let all_data_product = [
     image: pro_43,
     new_price: 85.0,
     old_price: 120.5,
+    description: "A keratin-infused hair care collection that smoothens frizz and leaves hair soft and manageable.",
   },
   {
     id: 47,
@@ -401,6 +408,7 @@ let all_data_product = [
     image: pro_47,
     new_price: 39.0,
     old_price: 45.5,
+    description: "A gentle lotion formulated to nourish and moisturize your baby's sensitive skin for all-day hydration.",
   },
   {
     id: 48,
@@ -409,6 +417,7 @@ let all_data_product = [
     image: pro_48,
     new_price: 85.0,
     old_price: 120.5,
+    description: "A soothing bath treatment that calms and comforts your baby's delicate skin with natural oat extract.",
   },
   {
     id: 49,

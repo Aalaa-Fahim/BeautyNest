@@ -34,7 +34,6 @@ const App = () => {
         </Route>
         <Route path='/cart' element={<Cart />} />
         <Route path='/login' element={<Login />} />
-        <Route path='/log' element={<Log />} />
         <Route path='/signup' element={<SignUp />} />
       </Routes>
       <Footer />

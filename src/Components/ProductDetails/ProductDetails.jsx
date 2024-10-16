@@ -28,16 +28,18 @@ const ProductDetails = (props) => {
             <p className='text-xs text-gray-400'>(132 Customer review)</p>
           </div>
           <p className='text-base text-gray-600 -mt-3'>{product.description}</p>
-          <div>
-            <div className='w-52 flex items-center justify-between text-gray-500 gap-4 border p-3'>
-              <p className='text-sm'>Quantity</p>
+          <div className='flex gap-4'>
+            <div className='w-52 flex items-center justify-between text-gray-700 gap-4 border rounded-lg  p-3'>
+              <p className='text-sm '>Quantity</p>
               <div className='flex items-center gap-4 text-sm font-semibold'>
                 <button className='border h-5 font-normal text-goldenPink text-lg flex items-center justify-center px-2 hover:bg-gray-700 hover:text-white cursor-pointer duration-300 active:bg-[#695c5c]'>-</button>
                 <span>{1}</span>
                 <button className='border h-5 font-normal text-goldenPink text-lg flex items-center justify-center px-2 hover:bg-gray-700 hover:text-white cursor-pointer duration-300 active:bg-[#695c5c]'>+</button>
               </div>
             </div>
+            <button className='bg-[#695c5c] text-white font-semibold py-3 px-6 rounded-lg  transition-colors hover:bg-[#cbb1b1] mt-auto'>add to cart</button>
           </div>
+          <p>Category: <span>{product.category}</span></p>
         </div>
       </div>
       

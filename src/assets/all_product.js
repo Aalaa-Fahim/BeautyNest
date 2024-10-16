@@ -426,6 +426,7 @@ let all_data_product = [
     image: pro_49,
     new_price: 19.0,
     old_price: 26.5,
+    description: "A moisturizing baby oil that provides gentle nourishment and hydration for your baby's skin.",
   },
   {
     id: 50,
@@ -434,6 +435,7 @@ let all_data_product = [
     image: pro_50,
     new_price: 95.0,
     old_price: 110.5,
+    description: "A special gift set designed for newborns, featuring gentle products that nurture delicate skin.",
   },
   {
     id: 51,
@@ -442,6 +444,7 @@ let all_data_product = [
     image: pro_51,
     new_price: 99.0,
     old_price: 137.5,
+    description: "A complete baby care collection that nourishes and protects your baby's skin for all-day hydration."
   },
   {
     id: 53,
@@ -450,6 +453,7 @@ let all_data_product = [
     image: pro_53,
     new_price: 31.0,
     old_price: 35.5,
+    description: "A rich moisturizing oil that provides gentle massage and hydration for your baby's delicate skin.",
   },
   {
     id: 54,
@@ -458,6 +462,7 @@ let all_data_product = [
     image: pro_54,
     new_price: 87.0,
     old_price: 95.5,
+    description: "A 2-in-1 wash and shampoo that gently cleanses and moisturizes your baby's hair and skin."
   },
   {
     id: 56,
@@ -466,6 +471,7 @@ let all_data_product = [
     image: pro_56,
     new_price: 125.0,
     old_price: 131.5,
+    description: "A gentle face wash packed with vitamins that cleanses and nourishes your child's delicate skin."
   },
   {
     id: 57,

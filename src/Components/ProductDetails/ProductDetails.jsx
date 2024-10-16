@@ -11,7 +11,7 @@ const ProductDetails = (props) => {
         </div>
         <div className='w-full lg:w-3/5 flex flex-col justify-center gap-12'>
           <div>
-            <h2 className='text-3xl lg:text-4xl font-semibold'>{product.name}</h2>
+            <h2 className='text-2xl lg:text-3xl font-semibold'>{product.name}</h2>
             <div className='flex items-center gap-4 lg:gap-12 mt-3'>
               <p className='text-goldenPink font-semibold text-xl lg:text-2xl'>${product.new_price}</p>
               <p className='text-gray-500 line-through text-xs lg:text-base'>${product.old_price}</p>

@@ -19,11 +19,12 @@ const Item = (props) => {
     >
       {/* Product Image Section */}
       <div className='flex justify-center items-center overflow-hidden rounded-lg mb-4'>
-        <img 
+        <Link to={`/product/${props.id}`}><img 
           src={props.image} 
           alt='Item Image' 
           className='w-36 h-36 object-cover rounded-lg' 
         />
+        </Link>
       </div>
 
       {/* Product Name and Prices Section */}

@@ -444,7 +444,7 @@ let all_data_product = [
     image: pro_51,
     new_price: 99.0,
     old_price: 137.5,
-    description: "A complete baby care collection that nourishes and protects your baby's skin for all-day hydration."
+    description: "A complete baby care collection that nourishes and protects your baby's skin for all-day hydration.",
   },
   {
     id: 53,
@@ -462,7 +462,7 @@ let all_data_product = [
     image: pro_54,
     new_price: 87.0,
     old_price: 95.5,
-    description: "A 2-in-1 wash and shampoo that gently cleanses and moisturizes your baby's hair and skin."
+    description: "A 2-in-1 wash and shampoo that gently cleanses and moisturizes your baby's hair and skin.",
   },
   {
     id: 56,
@@ -471,7 +471,7 @@ let all_data_product = [
     image: pro_56,
     new_price: 125.0,
     old_price: 131.5,
-    description: "A gentle face wash packed with vitamins that cleanses and nourishes your child's delicate skin."
+    description: "A gentle face wash packed with vitamins that cleanses and nourishes your child's delicate skin.",
   },
   {
     id: 57,
@@ -480,6 +480,7 @@ let all_data_product = [
     image: pro_57,
     new_price: 39.0,
     old_price: 48.5,
+    description: "A nourishing body lotion designed to moisturize and protect your baby's skin for 24 hours.",
   },
   {
     id: 58,
@@ -488,6 +489,7 @@ let all_data_product = [
     image: pro_58,
     new_price: 85.0,
     old_price: 120.5,
+    description: "A delicious and healthy banana puff snack that is perfect for babies and toddlers.",
   },
 ];
 

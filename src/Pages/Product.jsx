@@ -5,11 +5,14 @@ import { useParams } from 'react-router-dom';
 import ProductNav from '../Components/ProductNav/ProductNav';
 
 const Product = () => {
-  const {all_product} = useContext(StoreContext);
+  const {all_data_product} = useContext(StoreContext);
   const {productId} = useParams();
-  const product = all_product.find((e) => e.id === (productId));
+  const product = all_data_product.find((e) => e.id === parseInt(productId));
   return (
     <div>
+      <ProductNav product={product}/>
+      <ProductNav product={product}/>
+      <ProductNav product={product}/>
       <ProductNav product={product}/>
     </div>
   )

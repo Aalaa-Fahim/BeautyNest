@@ -1,11 +1,11 @@
 import React from 'react'
-import { LuChevronRight } from "react-icons/lu";
+import { Link } from 'react-router-dom';
 
 const ProductNav = (props) => {
   const {product} = props;
   return (
     <div>
-      Home <LuChevronRight />{product.category} <LuChevronRight /> {product.name}
+      <Link to="/">Home</Link>{">"}<Link to={`/${product.category}`}> {product.category}</Link>{">"} {product.name}
     </div>
   )
 }

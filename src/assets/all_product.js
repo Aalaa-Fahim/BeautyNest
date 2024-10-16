@@ -237,6 +237,7 @@ let all_data_product = [
     image: pro_21,
     new_price: 17.0,
     old_price: 23.5,
+    description: "Soothe and hydrate your skin with BIOAQUA's Aloe Vera soothing gel. This 92% natural formula calms irritated skin and provides instant relief from dryness.",
   },
   {
     id: 22,

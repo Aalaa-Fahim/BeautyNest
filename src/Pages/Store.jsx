@@ -1,6 +1,6 @@
 import React from 'react'
 import all_data_product from '../assets/all_product';
-import Item from '../Item/Item';
+import Item from '../Components/Item/Item';
 
 const Store = () => {
   return (

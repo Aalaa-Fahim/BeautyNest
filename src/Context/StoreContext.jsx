@@ -27,28 +27,26 @@ const StoreContextProvider = (props)=> {
   }
 
   // Function to update quantity of an item in the cart
-  // const updateCartQuantity = (productId, newQuantity) => {
-  //   if (newQuantity <= 0) {
-  //     removeFromCart(productId);
-  //   } else {
-  //     setCartItems(cartItems.map(item =>
-  //       item.id === productId
-  //       ? { ...item, quantity: newQuantity }
-  //       : item
-  //     ));
-  //   }
-  // };
+  const updateCartQuantity = (itemId, newQuantity) => {
+    if (newQuantity <= 0) {
+      setCartItems((prev) => ({ ...prev, [itemId]: 0 }));
+    } else {
+      setCartItems((prev) => ({ ...prev, [itemId]: newQuantity }));
+    }
+  }
 
-
-
-
+  // Function to reset the cart (set all items' quantities to 0)
+  const resetCart = () => {
+    setCartItems(getDefaultCart());
+  }
 
   const contextValue = {
     all_data_product, 
     cartItems, 
     addToCart, 
     removeFromCart, 
-    //updateCartQuantity
+    updateCartQuantity,
+    resetCart,
   };
 
   return (

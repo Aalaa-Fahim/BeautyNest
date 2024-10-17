@@ -17,10 +17,10 @@ const SignUp = () => {
   }
   try {
     await createUserWithEmailAndPassword(auth, email, password);
-    toast.success("User signed up successfully!");
+    toast.success("Signed up successfully!");
   } catch (error) {
     if (error.code === 'auth/email-already-in-use') {
-      toast.error("Email is already in use. Please try another.");
+      toast.error("Email already exits. Please try another one.");
     } else if (error.code === 'auth/invalid-email') {
       toast.error("Invalid email format.");
     } else if (error.code === 'auth/weak-password') {
@@ -33,8 +33,8 @@ const SignUp = () => {
 };
 
   return (
-    <div className="flex items-center justify-center h-screen bg-gray-100">
-      <div className="bg-white p-8 rounded-lg shadow-lg w-96">
+    <div className="flex items-center justify-center h-screen bg-white">
+      <div className="bg-[#f3d6cf] p-8 rounded-lg shadow-lg w-96">
         <h1 className="text-2xl text-[#695c5c] font-bold mb-6 text-center">Sign Up</h1>
         <input 
           className="w-full px-4 py-2 mb-4 border rounded-lg focus:outline-none focus:ring-2 focus:ring-[#695c5c]"
@@ -56,10 +56,10 @@ const SignUp = () => {
         <button 
         className="w-full bg-[#695c5c] text-white py-2 rounded-lg hover:bg-goldenPink transition duration-200" onClick={signUp}>Sign Up
         </button>
-        <p className="mt-4 text-center text-gray-600">
+        <p className="mt-6 text-center text-gray-600">
           Already have an account? 
-          <Link to='/login' className="text-[#695c5c] font-semibold hover:underline">
-            Login.
+          <Link to='/login' className="ml-2 text-[#695c5c] font-semibold hover:underline">
+            Login
           </Link>
         </p>
       </div>

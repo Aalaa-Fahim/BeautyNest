@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import { auth, googleProvider } from "../../firebase.config";
-import { signInWithEmailAndPassword, signInWithPopup, GoogleAuthProvider } from "firebase/auth";
+import { signInWithEmailAndPassword, signInWithPopup } from "firebase/auth";
 import { Link } from 'react-router-dom';
 import { FaGoogle } from 'react-icons/fa';
+import { toast } from 'react-toastify';
 
 const Login = () => {
   const [email, setEmail] = useState("");
@@ -12,32 +13,32 @@ const Login = () => {
   const LogIn = async () => {
     try {
       await signInWithEmailAndPassword(auth, email, password);
-      console.log("User signed in successfully");
+      toast.success('Login successful!');
     } catch (error) {
-      console.error("Error signing in:", error);
+      toast.error(`Login failed: ${error.message}`);
     }
   };
 
   const loginWithGoogle = async () => {
     try {
-      await signInWithPopup(auth, provider);
-      console.log("User signed in successfully");
+      await signInWithPopup(auth, googleProvider);
+      toast.success('Google account login successful!');
     } catch (error) {
-      console.error("Error signing in with Google:", error);
+      toast.error(`Google login failed: ${error.message}`);
     }
   };
 
   return (
-    <div className="flex items-center justify-center h-screen bg-gray-100">
-      <div className="bg-white p-8 rounded-lg shadow-lg w-96">
+    <div className="flex items-center justify-center h-screen bg-white">
+      <div className="bg-[#f3d6cf] p-8 rounded-lg shadow-lg w-96">
         <h1 className="text-2xl text-[#695c5c] font-bold mb-6 text-center">Login</h1>
         <div className="mb-4">
           <button 
-            className="w-full bg-[#695c5c] text-white py-2 rounded-lg hover:bg-[#695c5c] transition duration-200 mb-2"
+            className="w-full bg-[#695c5c] text-white py-2 rounded-lg hover:bg-[#695c5c] transition duration-200 mb-2 flex items-center justify-center"
             onClick={loginWithGoogle}
             onMouseDown={e => e.preventDefault()}>
             <FaGoogle className="h-5 w-5 mr-2" />
-            <span className="flex-grow text-left">Login with Google</span>
+            <span>Login with Google</span>
           </button>
           <button 
             className="w-full text-[#695c5c] py-2 rounded-lg border border-[#695c5c] hover:bg-[#695c5c] hover:text-white transition duration-200"
@@ -67,10 +68,10 @@ const Login = () => {
           </>
         )}
 
-        <p className="mt-4 text-center text-gray-600">
-          Need an account? 
-          <Link to='/signup' className="text-[#695c5c] font-semibold hover:underline">
-            Sign Up.
+        <p className="mt-6 text-center text-gray-600">
+          Don't have an account? 
+          <Link to='/signup' className="ml-2 text-[#695c5c] font-semibold hover:underline">
+            Sign Up
           </Link>
         </p>
       </div>

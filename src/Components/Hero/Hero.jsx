@@ -111,7 +111,7 @@ const Hero = () => {
           <CTAButton
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
-            href="/shop"
+            href="/store"
           >
             Shop Now
           </CTAButton>

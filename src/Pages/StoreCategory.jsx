@@ -12,7 +12,7 @@ const StoreCategory = (props) => {
           src={props.banner} 
           alt='category banner' 
           className='w-full h-auto object-cover rounded-lg'
-          style={{ maxHeight: '400px' }} // Optional: Set a max height
+          style={{ maxHeight: '400px' }}
         />
       </div>
 

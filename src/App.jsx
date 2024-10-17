@@ -11,10 +11,12 @@ import beauty_banner from './assets/images/beauty_banner.jpg';
 import facial_banner from './assets/images/facial_banner.jpg';
 import hair_banner from './assets/images/hair_banner.jpg';
 import baby_banner from './assets/images/baby_banner.jpg';
+import banner_3 from './assets/images/banner_3.jpg';
 import ScrollTop from './Components/ScrollTop/ScrollTop'; 
 import SignUp from './Components/SignUp/SignUp';
 import Login from './Components/Login/Login';
 import 'react-toastify/dist/ReactToastify.css'; 
+import Store from './Pages/Store';
 
 
 const App = () => {
@@ -29,6 +31,7 @@ const App = () => {
         <Route path='/facial' element={<StoreCategory banner={facial_banner} category="facial" />} />
         <Route path='/hair' element={<StoreCategory banner={hair_banner} category="hair" />} />
         <Route path='/baby' element={<StoreCategory banner={baby_banner} category="baby" />} />
+        <Route path='/store' element={<Store banner={banner_3} />} />
         <Route path='/product' element={<Product />}>
           <Route path=':productId' element={<Product/>} />
         </Route>

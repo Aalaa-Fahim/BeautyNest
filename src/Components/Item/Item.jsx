@@ -1,9 +1,11 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useContext } from 'react';
 import 'aos/dist/aos.css';
 import AOS from 'aos';
 import { Link } from 'react-router-dom';
+import { StoreContext } from '../../Context/StoreContext';
 
 const Item = (props) => {
+  const {addToCart} = useContext(StoreContext);
   useEffect(() => {
     AOS.init({ 
       duration: 1000,
@@ -47,6 +49,7 @@ const Item = (props) => {
       <div className='mt-4'>
         <button 
           className='bg-[#695c5c] text-white font-semibold py-2 px-4 rounded-lg w-full transition-colors hover:bg-[#cbb1b1] mt-auto'
+          onClick={()=>{addToCart(props.id)}}
         >
           Add To Cart
         </button> 

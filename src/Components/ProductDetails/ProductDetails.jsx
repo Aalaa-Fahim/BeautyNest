@@ -39,7 +39,7 @@ const ProductDetails = (props) => {
                 <button className='border h-5 font-normal text-goldenPink text-lg flex items-center justify-center px-2 hover:bg-gray-700 hover:text-white cursor-pointer duration-300 active:bg-[#695c5c]'>+</button>
               </div>
             </div>
-            <button className='bg-gradient-to-r from-primary to-secondary text-white font-semibold py-3 px-8 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 hover:bg-gradient-to-r hover:from-secondary hover:to-primary' onClick={()=>{addToCart(product.id)}}>add to cart</button>
+            <button className='bg-gradient-to-r from-primary to-secondary text-white font-semibold py-3 px-8 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 hover:bg-gradient-to-r hover:from-secondary hover:to-primary' onClick={()=>{addToCart(product.id)}}>Add To Cart</button>
           </div>
           <p className='text-gray-500 text-sm'>Category: <span className='font-medium capitalize text-gray-900'>{product.category}</span></p>
         </div>

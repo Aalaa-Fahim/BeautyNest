@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import { toast, ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const FeedbackForm = () => {
   const [formData, setFormData] = useState({
@@ -17,7 +19,11 @@ const FeedbackForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    alert('Thank you for your feedback!');
+    // Display a success toast message
+    toast.success('Thank you for your feedback!', {
+      position: toast.POSITION.TOP_CENTER,
+      autoClose: 3000,
+    });
   };
 
   return (
@@ -76,6 +82,7 @@ const FeedbackForm = () => {
           </button>
         </div>
       </form>
+      <ToastContainer />
     </div>
   );
 };

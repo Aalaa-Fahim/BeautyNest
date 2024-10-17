@@ -4,7 +4,7 @@ import pro_8 from "./images/pro_8.jpg";
 import pro_21 from "./images/pro_21.jpg";
 import pro_27 from "./images/pro_27.jpg";
 import pro_37 from "./images/pro_37.jpg";
-import pro_51 from "./images/pro_51.jpg";
+
 
 let data_product = [
   {

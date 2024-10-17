@@ -23,8 +23,11 @@ const StoreContextProvider = (props)=> {
 
   // Function to remove item from cart
   const removeFromCart = (itemId) => {
-    setCartItems((prev) => ({...prev, [itemId]:prev[itemId]-1}) );
-  }
+    setCartItems((prev) => ({
+      ...prev,
+      [itemId]: Math.max(0, prev[itemId] - 1),
+    }));
+  };
 
   // Function to update quantity of an item in the cart
   const updateCartQuantity = (itemId, newQuantity) => {

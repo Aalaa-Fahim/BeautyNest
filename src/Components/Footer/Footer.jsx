@@ -4,7 +4,7 @@ import styled from 'styled-components';
 const FooterContainer = styled.footer`
   background-color: #333;
   color: #fff;
-  padding: 6px 40px;
+  padding: 3px 40px;
   text-align: center;
 `;
 
@@ -16,7 +16,17 @@ const FooterContent = styled.div`
 `;
 
 const FooterSection = styled.div`
+  margin: 10px 0;
+`;
+
+const FooterLink = styled.a`
+  color: #fff;
   margin: 0 10px;
+  text-decoration: none;
+  
+  &:hover {
+    text-decoration: underline;
+  }
 `;
 
 const Footer = () => {
@@ -28,15 +38,15 @@ const Footer = () => {
         </FooterSection>
         <FooterSection>
           <h3>Contact Us</h3>
-          <p>Email: info@beautynest.com</p>
+          <address>Email: info@beautynest.com</address>
         </FooterSection>
         <FooterSection>
           <h3>Follow Us</h3>
-          <p>
-            <a href="#" style={{ color: '#fff', marginRight: '10px' }}>Instagram</a> 
+          <nav>
+            <FooterLink href="#">Instagram</FooterLink>
             <span>|</span>
-            <a href="#" style={{ color: '#fff', marginLeft: '10px' }}>Facebook</a>
-          </p>
+            <FooterLink href="#">Facebook</FooterLink>
+          </nav>
         </FooterSection>
       </FooterContent>
     </FooterContainer>

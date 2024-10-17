@@ -1,6 +1,6 @@
-import React from 'react'
-import Nav from './Components/Navbar/Nav'
-import { Routes, Route , BrowserRouter, ScrollRestoration } from 'react-router-dom';
+import React from 'react';
+import Nav from './Components/Navbar/Nav';
+import { Routes, Route, BrowserRouter } from 'react-router-dom';
 import StoreCategory from './Pages/StoreCategory';
 import LoginSingup from './Pages/LoginSingup';
 import Home from './Pages/Home';
@@ -18,35 +18,36 @@ import Login from './Components/Login/Login';
 import 'react-toastify/dist/ReactToastify.css'; 
 import Store from './Pages/Store';
 import { ToastContainer } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
-
 
 const App = () => {
   return (
-    <div>
+    <div className="flex flex-col min-h-screen">
       <BrowserRouter>
-      <ScrollTop />
-      <Nav />
-      <ToastContainer />
-      <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='/beauty' element={<StoreCategory banner={beauty_banner} category="beauty" />} />
-        <Route path='/facial' element={<StoreCategory banner={facial_banner} category="facial" />} />
-        <Route path='/hair' element={<StoreCategory banner={hair_banner} category="hair" />} />
-        <Route path='/baby' element={<StoreCategory banner={baby_banner} category="baby" />} />
-        <Route path='/store' element={<Store banner={banner_3} />} />
-        <Route path='/product' element={<Product />}>
-          <Route path=':productId' element={<Product/>} />
-        </Route>
-        <Route path='/cart' element={<Cart />} />
-        <Route path='/login' element={<Login />} />
-        <Route path='/signup' element={<SignUp />} />
-      </Routes>
-      <Footer />
+        <ScrollTop />
+        <Nav />
+        <ToastContainer />
+        
+        <main className="flex-grow">
+          <Routes>
+            <Route path='/' element={<Home />} />
+            <Route path='/beauty' element={<StoreCategory banner={beauty_banner} category="beauty" />} />
+            <Route path='/facial' element={<StoreCategory banner={facial_banner} category="facial" />} />
+            <Route path='/hair' element={<StoreCategory banner={hair_banner} category="hair" />} />
+            <Route path='/baby' element={<StoreCategory banner={baby_banner} category="baby" />} />
+            <Route path='/store' element={<Store banner={banner_3} />} />
+            <Route path='/product' element={<Product />}>
+              <Route path=':productId' element={<Product/>} />
+            </Route>
+            <Route path='/cart' element={<Cart />} />
+            <Route path='/login' element={<Login />} />
+            <Route path='/signup' element={<SignUp />} />
+          </Routes>
+        </main>
+
+        <Footer />
       </BrowserRouter>
-      
     </div>
-  )
+  );
 }
 
 export default App;

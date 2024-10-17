@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { auth, googleProvider } from "../../firebase.config";
 import { signInWithEmailAndPassword, signInWithPopup } from "firebase/auth";
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { FaGoogle } from 'react-icons/fa';
 import { toast } from 'react-toastify';
 
@@ -9,13 +9,15 @@ const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [isEmailLogin, setIsEmailLogin] = useState(false);
-  
+  const navigate = useNavigate();
+
   const LogIn = async () => {
     try {
       await signInWithEmailAndPassword(auth, email, password);
       toast.success('Login successful!');
+      navigate('/');
     } catch (error) {
-      toast.error("This account does not exit. Please, try again.");
+      toast.error("This account does not exist. Please, try again.");
     }
   };
 
@@ -23,8 +25,9 @@ const Login = () => {
     try {
       await signInWithPopup(auth, googleProvider);
       toast.success('Google account login successful!');
+      navigate('/');
     } catch (error) {
-      toast.error(`Google login failed: ${error.message}`);
+      toast.error(`Google login failed`);
     }
   };
 
@@ -40,11 +43,17 @@ const Login = () => {
             <FaGoogle className="h-5 w-5 mr-2" />
             <span>Login with Google</span>
           </button>
-          <button 
-            className="w-full text-[#695c5c] py-2 rounded-lg border border-[#695c5c] hover:bg-[#695c5c] hover:text-white transition duration-200"
-            onClick={() => setIsEmailLogin(true)}>
-            Login with Email/Password
-          </button>
+          
+          {/* Conditional Rendering for Email/Password Button */}
+          {!isEmailLogin && (
+            <button 
+              className="w-full text-[#695c5c] py-2 rounded-lg border border-[#695c5c] hover:bg-[#695c5c] hover:text-white transition duration-200"
+              onClick={() => {
+                setIsEmailLogin(true); // Hide this button
+              }}>
+              Login with Email/Password
+            </button>
+          )}
         </div>
 
         {isEmailLogin && (

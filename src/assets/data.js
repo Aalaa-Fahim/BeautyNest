@@ -55,14 +55,7 @@ let data_product = [
     new_price: 85.0,
     old_price: 120.5,
   },
-  {
-    id: 51,
-    name: "Johanson's baby collection nourishes babys skin for 24 hours full set",
-    category: "baby",
-    image: pro_51,
-    new_price: 85.0,
-    old_price: 120.5,
-  },
+  
 ];
 
 export default data_product;

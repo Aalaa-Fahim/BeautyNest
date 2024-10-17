@@ -17,6 +17,8 @@ import SignUp from './Components/SignUp/SignUp';
 import Login from './Components/Login/Login';
 import 'react-toastify/dist/ReactToastify.css'; 
 import Store from './Pages/Store';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 const App = () => {
@@ -25,6 +27,7 @@ const App = () => {
       <BrowserRouter>
       <ScrollTop />
       <Nav />
+      <ToastContainer />
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/beauty' element={<StoreCategory banner={beauty_banner} category="beauty" />} />

@@ -1,13 +1,14 @@
 import React, { useState } from 'react'
 import { auth } from "../../firebase.config";
 import { createUserWithEmailAndPassword } from "firebase/auth";
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
 
 const SignUp = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
+  const navigate = useNavigate();
 
   const signUp = async () => {
     if (password !== confirmPassword) {
@@ -18,6 +19,7 @@ const SignUp = () => {
   try {
     await createUserWithEmailAndPassword(auth, email, password);
     toast.success("Signed up successfully!");
+    navigate('/login');
   } catch (error) {
     if (error.code === 'auth/email-already-in-use') {
       toast.error("Email already exits. Please try another one.");

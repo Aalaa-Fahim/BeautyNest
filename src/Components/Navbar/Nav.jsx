@@ -1,10 +1,18 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import logo from '../../assets/images/logo.png';
 import { FaCartShopping, FaBars } from "react-icons/fa6";
 import { NavLink, Link } from 'react-router-dom';
+import { StoreContext } from '../../Context/StoreContext';
+
 
 const Nav = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const { cartItems } = useContext(StoreContext);
+
+  // Function to calculate total quantity of cart items
+  const getTotalItems = () => {
+    return Object.values(cartItems).reduce((total, quantity) => total + quantity, 0);
+  };
 
   const linkClass = ({ isActive }) =>
     isActive
@@ -37,6 +45,12 @@ const Nav = () => {
                   Order Now
                 </span>
                 <FaCartShopping className="text-xl text-white" />
+                {/* Total Cart Items */}
+                {getTotalItems() > 0 && (
+                  <span className="ml-2 text-sm bg-red-500 text-white rounded-full px-2 py-0.5">
+                    {getTotalItems()}
+                  </span>
+                )}
               </button>
             </Link>
             {/* Login Button */}
@@ -72,6 +86,12 @@ const Nav = () => {
                   Order Now
                 </span>
                 <FaCartShopping className="text-xl text-white" />
+                {/* Total Cart Items */}
+                {getTotalItems() > 0 && (
+                  <span className="ml-2 text-sm bg-red-500 text-white rounded-full px-2 py-0.5">
+                    {getTotalItems()}
+                  </span>
+                )}
               </button>
             </Link>
             <Link to='/login'>

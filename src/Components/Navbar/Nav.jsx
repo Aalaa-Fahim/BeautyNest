@@ -47,7 +47,7 @@ const Nav = () => {
                 <FaCartShopping className="text-xl text-white" />
                 {/* Total Cart Items */}
                 {getTotalItems() > 0 && (
-                  <span className="ml-2 text-sm bg-red-500 text-white rounded-full px-2 py-0.5">
+                  <span className="ml-2 text-sm bg-secondary text-white rounded-full px-2 py-0.5">
                     {getTotalItems()}
                   </span>
                 )}
@@ -88,7 +88,7 @@ const Nav = () => {
                 <FaCartShopping className="text-xl text-white" />
                 {/* Total Cart Items */}
                 {getTotalItems() > 0 && (
-                  <span className="ml-2 text-sm bg-red-500 text-white rounded-full px-2 py-0.5">
+                  <span className="ml-2 text-sm bg-secondary text-white rounded-full px-2 py-0.5">
                     {getTotalItems()}
                   </span>
                 )}

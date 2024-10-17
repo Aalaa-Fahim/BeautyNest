@@ -1,13 +1,16 @@
-import React, { useState, useContext } from 'react';
+import React, { useState, useEffect, useContext } from 'react';
 import logo from '../../assets/images/logo.png';
 import { FaCartShopping, FaBars } from "react-icons/fa6";
 import { NavLink, Link } from 'react-router-dom';
 import { StoreContext } from '../../Context/StoreContext';
-
+import { auth } from '../../firebase.config';
+import { signOut, onAuthStateChanged } from 'firebase/auth';
+import { toast } from 'react-toastify';
 
 const Nav = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const { cartItems } = useContext(StoreContext);
+  const [user, setUser] = useState(null);
 
   // Function to calculate total quantity of cart items
   const getTotalItems = () => {
@@ -22,6 +25,25 @@ const Nav = () => {
   // Function to close menu after clicking any link
   const handleLinkClick = () => {
     setIsMenuOpen(false);
+  };
+
+  // Track authentication state
+  useEffect(() => {
+    const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
+      setUser(currentUser);
+    });
+    return () => unsubscribe();
+  }, []);
+
+  // Logout handler
+  const handleLogout = async () => {
+    try {
+      await signOut(auth);
+      toast.success('Logged out successfully');
+      setUser(null);
+    } catch (error) {
+      toast.error('Error logging out, try again');
+    }
   };
 
   return (
@@ -53,12 +75,22 @@ const Nav = () => {
                 )}
               </button>
             </Link>
-            {/* Login Button */}
-            <Link to='/login'>
-              <button className="bg-gradient-to-r from-primary to-secondary transition-all duration-300 text-white py-1 px-4 rounded-full">
-                Login
+
+            {/* Conditional Login/Logout Button */}
+            {!user ? (
+              <Link to='/login'>
+                <button className="bg-gradient-to-r from-primary to-secondary transition-all duration-300 text-white py-1 px-4 rounded-full">
+                  Login
+                </button>
+              </Link>
+            ) : (
+              <button
+                onClick={handleLogout}
+                className="bg-gradient-to-r from-primary to-secondary transition-all duration-300 text-white py-1 px-4 rounded-full"
+              >
+                Log out
               </button>
-            </Link>
+            )}
 
             {/* Hamburger Menu Button */}
             <button
@@ -94,11 +126,22 @@ const Nav = () => {
                 )}
               </button>
             </Link>
-            <Link to='/login'>
-              <button className="bg-gradient-to-r from-primary to-secondary transition-all duration-300 text-white py-1 px-4 rounded-full">
-                Login
+
+            {/* Conditional Login/Logout Button */}
+            {!user ? (
+              <Link to='/login'>
+                <button className="bg-gradient-to-r from-primary to-secondary transition-all duration-300 text-white py-1 px-4 rounded-full">
+                  Login
+                </button>
+              </Link>
+            ) : (
+              <button
+                onClick={handleLogout}
+                className="bg-gradient-to-r from-primary to-secondary transition-all duration-300 text-white py-1 px-4 rounded-full"
+              >
+                Log out
               </button>
-            </Link>
+            )}
           </div>
         </div>
 
@@ -115,6 +158,6 @@ const Nav = () => {
       </div>
     </div>
   );
-}
+};
 
 export default Nav;

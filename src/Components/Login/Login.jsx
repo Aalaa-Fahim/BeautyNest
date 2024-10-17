@@ -15,7 +15,7 @@ const Login = () => {
       await signInWithEmailAndPassword(auth, email, password);
       toast.success('Login successful!');
     } catch (error) {
-      toast.error(`Login failed: ${error.message}`);
+      toast.error("This account does not exit. Please, try again.");
     }
   };
 

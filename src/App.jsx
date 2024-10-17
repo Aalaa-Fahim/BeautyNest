@@ -30,10 +30,55 @@ const App = () => {
         <main className="flex-grow">
           <Routes>
             <Route path='/' element={<Home />} />
-            <Route path='/beauty' element={<StoreCategory banner={beauty_banner} category="beauty" />} />
-            <Route path='/facial' element={<StoreCategory banner={facial_banner} category="facial" />} />
-            <Route path='/hair' element={<StoreCategory banner={hair_banner} category="hair" />} />
-            <Route path='/baby' element={<StoreCategory banner={baby_banner} category="baby" />} />
+            
+            {/* Beauty category */}
+            <Route 
+              path='/beauty' 
+              element={
+                <StoreCategory 
+                  banner={beauty_banner} 
+                  category="beauty" 
+                  description="Explore the best beauty products that enhance your radiance. From skincare to cosmetics, we have it all!" 
+                />
+              } 
+            />
+
+            {/* Facial category */}
+            <Route 
+              path='/facial' 
+              element={
+                <StoreCategory 
+                  banner={facial_banner} 
+                  category="facial" 
+                  description="Pamper yourself with premium facial treatments. Our products are designed to give you the glow you deserve." 
+                />
+              } 
+            />
+
+            {/* Hair category */}
+            <Route 
+              path='/hair' 
+              element={
+                <StoreCategory 
+                  banner={hair_banner} 
+                  category="hair" 
+                  description="Get the best hair care products to ensure your hair stays healthy, shiny, and strong." 
+                />
+              } 
+            />
+
+            {/* Baby category */}
+            <Route 
+              path='/baby' 
+              element={
+                <StoreCategory 
+                  banner={baby_banner} 
+                  category="baby" 
+                  description="Gentle care for your baby with safe and organic products designed for the most delicate skin." 
+                />
+              } 
+            />
+
             <Route path='/store' element={<Store banner={banner_3} />} />
             <Route path='/product' element={<Product />}>
               <Route path=':productId' element={<Product/>} />

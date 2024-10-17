@@ -62,7 +62,7 @@ const Cart = () => {
 
           {/* If no items in the cart */}
           {Object.keys(cartItems).every((key) => cartItems[key] === 0) && (
-            <p className="text-center mt-4 text-secondary">Your cart is empty. <Link to="/" className="text-goldenPink">Shop now</Link>.</p>
+            <p className="text-center mt-4 text-secondary">Your cart is empty. <Link to="/store" className="text-goldenPink">Shop now</Link>.</p>
           )}
         </div>
 

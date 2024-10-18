@@ -1,4 +1,5 @@
-# BeautyNest ![Logo](src/assets/images/final_logo.png)
+# BeautyNest
+![Logo](src/assets/images/final_logo.png)
 
 ## Table of Contents
 1. [Overview](#overview)
